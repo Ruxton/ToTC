@@ -25,6 +25,16 @@ Version:		0.1
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+require_once(dirname(__FILE__).'/totc.class.base.php');
+
+function ita_getDisplayTemplate($file) {
+    if (file_exists(TEMPLATEPATH . '/'.$file)) {
+        return TEMPLATEPATH . '/'.$file;
+    } else {
+        return dirname(__FILE__).'/templates/'.$file;
+    }
+}
+
 function totc_children( $atts )
 {
 	global $post;
