@@ -71,16 +71,26 @@ function totc_parent( $atts )
 	if($post->post_parent)
 	{
 		$args = array(
-			'ID' => $post->post_parent,
+			'page_id' => $post->post_parent,
+			'post_type' => 'page',
+			'orderby' => 'date',
+			'order' => 'DESC',
 			'numberposts' => 1
 		);
 
 		$parent = get_posts($args);
+//		var_dump($parent);
+		$link = get_permalink($parent[0]->ID);
+
+		$return = '<p><a href="'.$link.'">Return to Parent Page</a></p>';
+
 	}
 	else
 	{
 		$return = "";
 	}
+
+	return $return;
 
 }
 
