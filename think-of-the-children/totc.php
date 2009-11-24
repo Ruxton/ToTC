@@ -79,7 +79,6 @@ function totc_parent( $atts )
 		);
 
 		$parent = get_posts($args);
-//		var_dump($parent);
 		$link = get_permalink($parent[0]->ID);
 
 		$return = '<p><a href="'.$link.'">Return to Parent Page</a></p>';
