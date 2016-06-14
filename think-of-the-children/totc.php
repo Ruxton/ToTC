@@ -41,7 +41,9 @@ function totc_children( $atts )
 	global $more;
 	$more = 0;
 	$return = "";
-	
+
+  $oldpost = $post;
+
 	if($post->ID)
 	{
 		$args = array (
@@ -66,14 +68,14 @@ function totc_children( $atts )
 		}
 
 	}
-
+  setup_postdata($oldpost)
 	return $return;
 }
 
 function totc_parent( $atts )
 {
 	global $post;
-	
+
 	extract( shortcode_atts( array (
 			'text' => 'Return to Parent Article'
 		), $atts ) );
