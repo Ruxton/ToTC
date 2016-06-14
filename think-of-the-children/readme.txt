@@ -4,7 +4,7 @@ Donate link: http://ignite.digitalignition.net/articlesexamples/think-of-the-chi
 Tags: shortcode,table of contents,toc,child pages,children page,child page,pages,page
 Requires at least: 2.8.1
 Tested up to: 2.8.4
-Stable tag: 0.1
+Stable tag: 0.2
 
 Shortcodes for a table of contents based on child pages
 

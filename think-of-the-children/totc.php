@@ -5,7 +5,7 @@ Plugin URI:		http://ignite.digitalignition.net/articlesexamples/think-of-the-chi
 Description:	Shortcodes for a table of contents based on child pages
 Author:			Greg Tangey
 Author URI:		http://ignite.digitalignition.net/
-Version:		0.1
+Version:		0.2
 */
 
 /*  Copyright 2009  Greg Tangey  (email : greg@digitalignition.net)
