@@ -5,7 +5,7 @@ Plugin URI:		http://ignite.digitalignition.net/articlesexamples/think-of-the-chi
 Description:	Shortcodes for a table of contents based on child pages
 Author:			Greg Tangey
 Author URI:		http://ignite.digitalignition.net/
-Version:		0.2
+Version:		0.2.0
 */
 
 /*  Copyright 2009  Greg Tangey  (email : greg@digitalignition.net)
@@ -25,15 +25,7 @@ Version:		0.2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-require_once(dirname(__FILE__).'/totc.class.base.php');
-
-function ita_getDisplayTemplate($file) {
-    if (file_exists(TEMPLATEPATH . '/'.$file)) {
-        return TEMPLATEPATH . '/'.$file;
-    } else {
-        return dirname(__FILE__).'/templates/'.$file;
-    }
-}
+require_once(dirname(__FILE__).'/totc.base.php');
 
 function totc_children( $atts )
 {
@@ -68,7 +60,7 @@ function totc_children( $atts )
 		}
 
 	}
-  setup_postdata($oldpost)
+  setup_postdata($oldpost);
 	return $return;
 }
 
